@@ -1,0 +1,26 @@
+branch-defaults:
+  default:
+    environment: udagram-upload-dev
+    group_suffix: null
+  master:
+    environment: udagram-upload-dev
+deploy:
+  artifact: ./www/Archive.zip
+environment-defaults:
+  udagram-upload-dev:
+    branch: null
+    repository: null
+global:
+  application_name: udagram-upload
+  branch: null
+  default_ec2_keyname: vockey
+  default_platform: Node.js 14 running on 64bit Amazon Linux 2
+  default_region: us-east-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: udagram_ari_user
+  repository: null
+  sc: git
+  workspace_type: Application
